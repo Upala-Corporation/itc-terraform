@@ -6,4 +6,5 @@ Important ones are the region, ssh keys, AMI, VPC CIDR. Change them in `terrafor
 
 # Apply
 `terraform plan -out /tmp/terraform.plan`
+
 `terraform apply /tmp/terraform.plan`
