@@ -50,7 +50,7 @@ resource "aws_security_group" "itc-sg-allowed" {
         from_port = 0
         to_port = 0
         protocol = -1
-        cidr_blocks = ["10.10.0.0/22"]
+        cidr_blocks = [ var.VPC_CIDR_BLOCK ]
     }
     tags = {
         Name = "itc-sg-allowed"
